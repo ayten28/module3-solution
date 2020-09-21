@@ -1,0 +1,11 @@
+
+    <div ng-repeat="item in menu.foundItems" class="foundItems">
+            <ul><li>
+                Name:   {{item.name}} ({{item.short_name}})
+                <br>
+                Description: {{item.description}}
+                <input type="button" ng-click="menu.onRemove({index: $index})" class="btn btn-lg btn-primary" value="Don't want this one!">
+                </li>
+            </ul>
+    </div>
+<div class="alert alert-danger" role="alert" ng-show="menu.onEmpty">{{menu.onEmpty}}</div>
