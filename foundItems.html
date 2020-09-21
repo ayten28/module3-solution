@@ -1,5 +1,4 @@
-
-    <div ng-repeat="item in menu.foundItems" class="foundItems">
+<div ng-repeat="item in menu.foundItems" class="foundItems">
             <ul><li>
                 Name:   {{item.name}} ({{item.short_name}})
                 <br>
@@ -8,4 +7,4 @@
                 </li>
             </ul>
     </div>
-<div class="alert alert-danger" role="alert" ng-show="menu.onEmpty">{{menu.onEmpty}}</div>
+<div class="error"  ng-show="menu.onEmpty">{{menu.onEmpty}}</div>
